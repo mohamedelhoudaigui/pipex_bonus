@@ -6,7 +6,7 @@
 /*   By: mel-houd <mel-houd@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 09:14:49 by mel-houd          #+#    #+#             */
-/*   Updated: 2023/12/21 19:28:14 by mel-houd         ###   ########.fr       */
+/*   Updated: 2024/08/18 00:49:58 by mel-houd         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	regular_cases(const char *s, int *i, int *res, va_list args)
 	else if (s[*i + 1] == 'u')
 		ft_putnbr_unsigned(va_arg(args, unsigned int), res);
 	else if (s[*i + 1] == 'p')
-		ft_print_ptr(va_arg(args, uintptr_t), res);
+		ft_print_ptr(va_arg(args, intptr_t), res);
 	else if (s[*i + 1] == 'x')
 		ft_print_hex(va_arg(args, int), 'x', res);
 	else if (s[*i + 1] == 'X')
