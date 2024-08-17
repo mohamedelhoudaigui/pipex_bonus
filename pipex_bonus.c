@@ -12,11 +12,6 @@
 
 #include "pipex_bonus.h"
 
-void	f(void)
-{
-	system("leaks pipex");
-}
-
 void	process_job(t_pipex *args, int i)
 {
 	if (i == 0)
@@ -75,7 +70,6 @@ int	main(int ac, char **av, char **env)
 {
 	t_pipex	*args;
 
-	atexit(f);
 	if (ac >= 5)
 	{
 		args = pipex(ac, av, env);
